@@ -5,25 +5,37 @@
 }
 /* Menu  */
 .Menu{
+    position: fixed;
     display: flex;
     justify-content: space-around;
     background-color: black;
     height: 40px;
+    width: 100%;
 }
 .Menu .logo img{
     width: 100px;
+   
 }
 .Menu ul{
     margin-top:3%;
     list-style: none;
-    text-decoration: none; 
+  
 }
+.Menu ul li a{
+    text-decoration: none; 
+    color: white;
+}
+.Menu ul li a:active{
+    color:brown ;
+}
+
 .Menu ul li{
    display: inline;
    margin-left: 20px;
    color:gainsboro;
    transition: 1s;
    text-transform: uppercase;
+   cursor: pointer;
 }
 /* Home  */
 #Home{
@@ -74,5 +86,52 @@
   }
   #Home button:last-child{
       background-color: rgb(197, 65, 65); 
+  }
+  #About{
+      height: 120vh;
+      background-color: rgb(51, 46, 46);
+      color: white;
+
+  }
+  #About .intro{
+      padding: 5% 0;
+      text-align: center;
+      margin: 0 25%;
+  }
+  #About .intro p{
+      margin: 2% 0;
+      color: gray;
+  }
+  #About .intro hr{
+      margin-top: 5%;
+      background-color:red;
+      width: 10%;
+      height: 3px;  
+      margin-left: 45%; 
+  }
+  #About .info{
+      margin: 5% 0;
+      transition-duration: 2s;
+      transition-timing-function: ease-in;
+  }
+  #About .info img{
+      float: left;
+      margin: 0 10%;
+  }
+  #About .info h3{
+      padding-top: 5%;
+  }
+  #About .info p{
+      font-size: 12px;
+      margin:2% 5%;
+  }
+  #About .info span{
+      margin-right:175px ;
+      color: rgb(255, 145, 0);
+  }
+  #About .info h4{
+      display: inline-block;
+      margin-right: 13%;
+      margin-bottom: 2%;
   }
   
