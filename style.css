@@ -2,12 +2,13 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    background-color: black;
 }
+/* Menu  */
 .Menu{
     display: flex;
     justify-content: space-around;
-  
+    background-color: black;
+    height: 40px;
 }
 .Menu .logo img{
     width: 100px;
@@ -16,11 +17,62 @@
     margin-top:3%;
     list-style: none;
     text-decoration: none; 
-   
 }
 .Menu ul li{
    display: inline;
    margin-left: 20px;
    color:gainsboro;
    transition: 1s;
+   text-transform: uppercase;
 }
+/* Home  */
+#Home{
+    height: 75vh;
+    background-color: rgb(58, 56, 56);
+    padding-top:5% ; 
+    padding-left: 10%;
+    color:white;
+}
+#Home span i{
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 50%;
+    padding: 7px;
+}
+#Home h1{
+    margin-bottom: 1%;
+    margin-top:5%;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+    typing 3s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+  #Home img{
+      margin-top: -1%;
+      float: right;
+      margin-right:15%;
+  }
+  #Home button{
+      margin-top: 5%;
+      padding:1% 3%;
+      border-radius: 15px;
+      border-style: none;
+      border: 1px solid rgb(255, 60, 0);
+      margin-right: 3%;
+      color: white;
+      background-color: rgb(58, 56, 56);
+  }
+  #Home button:last-child{
+      background-color: rgb(197, 65, 65); 
+  }
+  
