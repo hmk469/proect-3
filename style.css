@@ -134,13 +134,11 @@
       margin-bottom: 2%;
   }
   #Skills{
-    height: 120vh;
-    padding: 5%;
+    height: 100vh;
+    padding: 10% 5%;
     background-color: rgb(54, 41, 41);
     color: white;
 }
-
-
 #Skills h1{
     font-weight:300px;
 }
@@ -200,4 +198,61 @@
     width: 40%;
     height: 3px;
     background-color: yellow;
+}
+#Projects{
+    text-align: center;
+    color: white;
+    padding: 5% 0;
+    background-color: rgb(27, 24, 24);
+    height: 150vh;
+}
+#Projects .title p{
+    opacity: 0.5;
+    margin-top: 2%;
+}
+#Projects hr{
+    width: 10%;
+    background-color: coral;
+    height: 3px;
+    margin-top: 3%;
+    margin-left: 45%;
+    border-radius: 20px;
+}
+#Projects .images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+#Projects .images div{
+    width: 20%;
+    margin: 5% ;
+    justify-content: space-around;
+    
+}
+#Projects .images div img{
+    width: 250px;
+}
+#Projects .images div img:hover{
+    filter:grayscale(10);
+}
+#Projects .images div .context:hover{
+   opacity: 1;
+   transition: all linear 0.5s;
+}
+#Projects .images .context{
+    margin-top: -80%;
+    width: 130%;
+    text-align: justify;
+    opacity: 0;
+   
+}
+#Projects .images .context button{
+   margin-top: 10%;
+   margin-left: 30%;
+   padding: 2% 10%;
+   border-radius: 10px;
+   background-color: coral;
+   color: white;
+   border-style: none;
 }
